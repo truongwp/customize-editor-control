@@ -4,6 +4,8 @@ This plugin provides WordPress editor (WYSIWYG) to Customize. It's easy to use l
 
 ## Usage
 
+Add this code to your `functions.php` file:
+
 ```php
 function themeslug_customize_register( $wp_customize ) {
 	$wp_customize->add_setting( 'example', array(
@@ -22,3 +24,5 @@ function themeslug_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'themeslug_customize_register' );
 ```
+
+More about WordPress Customize, read [Customize handbook](https://developer.wordpress.org/themes/customize-api/)
